@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My website</title>
+<link rel="stylesheet" href="index.css" >    
+</head>
+<body>
+    <div class="page">
+       <div class="header">
+           <div class="logo">
+                <i>CULTUREph.</i>
+           </div>
+ 
+           <nav>
+             <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="History.html">HISTORY</a>&nbsp;&nbsp;&nbsp;
+             <a href="Works.html">WORKS</a> &nbsp;&nbsp;&nbsp;
+             <a href="Contact.html">CONTACT</a>
+           </nav>
+       </div>    
+       <div class="body">
+           <div class="text">
+               <p>PANAY BUKIDNON</p>
+           </div>
+           
+           
+           <div class="description">
+           The Bukidnons of Calinog, Iloilo are the descendants of the Malay communities of the area who moved up to the hinterlands to defy Spanish attempts to subjugate them, or they are in fact natives of the place long before the coming of the Spaniards. The same conclusion should emanate – <span>They are Indigenous.</span>
+        </div>
+          
+           
+       </div>
+       <div class="footer"></div>
+        
+    </div>
+</body>
+</html>
+<style>
+.header{
+    background-color: #970600;
+    color:black;
+    width: 130%;
+    height: 80px;
+    text-align:right;
+    margin:0;
+}
+.logo{
+    color: white;
+    font-size:36px;
+    text-align:left;
+    width:50%;  
+}
+a{
+    text-decoration: none;
+    font-size:32px;
+    color:white;
+    margin-top:5px;
+    margin:0;
+}
+.body{
+    background-image:url("3.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:130%;
+    height:853px;
+}
+.text{
+    margin:0;
+    color:white;
+    padding-top:1%;
+    font-family: serif;
+    font-size: 75px;
+    text-align: center;
+    font-family: cursive;
+}
+.description{
+    font-size: 30px;
+    color: black;
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    line-height: 1;
+    padding-top:1%;
+    margin-top:618px;
+    display:inline-block;
+    background: linear-gradient(2deg,white,red)
+}
+.description span{
+    font-style: italic;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-buttom: 30px;
+}
+
+.footer{
+    background-color: #970600;
+    width: 130%;
+    height: 50px;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .text {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+</style>
